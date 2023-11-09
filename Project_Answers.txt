@@ -1,0 +1,65 @@
+			     EE 109  - Spring 2023
+				  Rangefinder
+
+
+Review Question 1 (Cost Analysis):
+
+Assume we are building 1000 units of this system.  Use the provided part
+numbers (see the webpage) and the digikey.com or jameco.com website to find the
+total **cost per unit** (again assume we build a quantity of 1000 units) for
+these range finding systems.  Itemize the part costs (list each part and its
+unit cost when bought in units of 1000) and then show the final cost per unit
+below.  Note: You only need to price the components used in the project (not
+all the components in your lab kit.  Also, you do not need to account for the
+cost of the circuit board or wires. In a real environment we would manufacture
+a PCB (Printed Circuit Board). As an optional task, you can search online for
+PCB manufacturers and what the costs and options are in creating a PCB.
+
+Cost of 1000 units:
+
+Wire stripper:4490
+Breadboard: 6430 
+USB-C to USB-A Cable: 1240
+Arduino UNO: 40000
+LCD Shield: 8900
+Jumper Wires: 24260
+Resistor: 11.40
+Push Button: 1581
+RGB LED: 8990
+Rangefinder: 3950
+Servo Motor: 4760
+Buzzer: 477.97
+Rotary Encoder:2344.2 
+knob: 890
+SN74HCT125N: 0.75/241
+74LS139 decoder:0.64/272
+
+Cost of one part when bought in bulk: $ 86.77
+
+
+Review Question 2 (Health/Safety/Reliability)
+
+Assume this system was to be used in a real industrial monitoring application.
+
+Considering reliability, health, and safety...
+
+ - What scenarios might you suggest testing (considering both HW and SW) 
+    before releasing the product for use? 
+
+From a user standpoint, they're going to be reusing the product over and over again. We should use our product over a longer amount of time to 
+test how durable it is. We should consider how a general user would use the product and if our product still operates under those conditions. For example,
+a user might use our product in the heat, cold, or rain. Will our hardware still work under those conditions? In regards to safety, check if certain conditions/
+environements the product can be used will cause any harmful responses such as electrical shock or a flammable response from the device. 
+
+ - How might you make your design more reliable? By reliability we don't just
+   mean keeping it running correctly (though you should consider that), but
+   also how you can detect that a connected component has failed to gracefully
+   handle such situations.  You can consider both HW and SW points of failure,
+   issues related to the operational environment, etc. and how to mitigate
+   those cases.
+
+From a software standpoint, you should be checking for when values go out of range and generate an error when it does so just in case the operational
+environment/user triggers an out of range input. Additionally, you can have backup software that can perform hardware tasks if the hardware fails. For example,
+just in case of unforseen issues with hardware components due to degradation over time, you can implement 
+redundant hardware components or software components to keep the operation running despite failure of one component. 
+
