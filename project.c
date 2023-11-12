@@ -2,8 +2,7 @@
  *
  *  Name: Adam Raslan
  *  Email: araslan@usc.edu
- *  Section: 12:30pm Friday Weber
- *  Assignment: Rangefinder Project
+ *  Rangefinder Project
  *
  ********************************************/
 
