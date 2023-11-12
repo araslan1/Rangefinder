@@ -50,7 +50,7 @@ main.hex: main.elf
 	avr-objcopy -j .text -j .data -O ihex main.elf main.hex
 	avr-size --format=avr --mcu=$(DEVICE) main.elf
 # If you have an EEPROM section, you must also create a hex file for the
-# EEPROM and add it to the "flash" target.
+# EEPROM and add it to the "flash" target
 
 # Targets for code debugging and analysis:
 disasm:	main.elf
