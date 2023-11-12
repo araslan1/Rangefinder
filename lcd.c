@@ -1,7 +1,6 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
-
 #include "lcd.h"                // Declarations of the LCD functions
 
 /* This function not declared in lcd.h since
