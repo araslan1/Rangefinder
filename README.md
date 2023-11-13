@@ -13,7 +13,7 @@ The "Acquire" button is used to initiate a range measurement. Each time it is pr
 
 Besides displaying the range on the LCD, the distance is also shown on a round dial by using a servo motor to rotate an indicator to point to the range. The servo is controlled by Timer/Counter2 since this is the only timer with an output signal that is not blocked by the LCD panel
 
-The project also incorporates a multicolor (red, green, blue) LED that is used to show the comparison between the most recent local range measurement and the local range threshold setting done with the rotary encoder. If the range measured is greater than or equal to the range threshold, the green LED is lit. If the range is less than the threshold the red LED is lit. The ranges should be compared to an accuracy of 1 cm. If no range measurement has yet been made, or if the measurement of the range failed for some reason, such as being beyond the 400cm limit, the red and green LEDs should go off and the blue LED should come on. The blue LED should stay on until there is a valid range measurement.
+The project also incorporates a multicolor (red, green, blue) LED that is used to show the comparison between the most recent local range measurement and the local range threshold setting done with the rotary encoder. If the range measured is greater than or equal to the range threshold, the green LED is lit. If the range is less than the threshold the red LED is lit. The ranges should be compared to an accuracy of 1 cm. If no range measurement has yet been made, or if the measurement of the range failed for some reason, such as being beyond the 400cm limit, the red and green LEDs go off and the blue LED comes on. The blue LED stays on until there is a valid range measurement.
 
 ### picture
 
